@@ -33,15 +33,15 @@
 }
 
 
-@import url("https://fonts.googleapis.com/css?family=Oswald:200");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 #app {
   display: grid;
-  grid-template-columns: 1fr 1fr 10vmin;
-  height: 90vh;
-  width: 90vw;
-  box-shadow: 0 2vmin 6vmin rgba(0, 0, 0, 0.2);
-  color: white;
-  overflow: hidden;
+      grid-template-columns: 1fr 1fr 10vmin;
+      height: 70vh;
+      width: 85vw;
+      box-shadow: 0 2vmin 6vmin rgb(30 30 30 / 15%);
+      color: white;
+      overflow: hidden;
 }
 
 .ui-layer {
@@ -58,13 +58,12 @@
 }
 .ui-images img {
   display: block;
-  margin: 0 -15%;
-  width: 130%;
+  margin: 0 0%;
+  width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.6;
-  filter: contrast(0.9);
+  object-fit: cover;
+  opacity: 1;
+  filter: contrast(1);
 }
 
 .ui-right > .ui-layer {
@@ -198,7 +197,7 @@ article.ui-layer .ui-content > p {
   text-transform: uppercase;
   white-space: nowrap;
   font-weight: 200;
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ---------------------------------- */
@@ -232,7 +231,7 @@ article.ui-layer .ui-content > p {
   font-size: 1.25em;
   height: 1.2em;
   margin: auto;
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
 .ui-nav-back:hover,
@@ -282,13 +281,13 @@ article.ui-layer .ui-content > p {
 }
 .ui-layer img {
   display: block;
-  transform: translateX(-10%);
+  transform: translateX(0%);
 }
 .ui-layer.-current > img {
-  transform: none;
+  transform: scale(0.8, 0.8) translateY(3%) translateX(-6%);
 }
 .ui-layer.-current ~ .ui-layer > img {
-  transform: translateX(10%);
+  transform: translateX(0%);
 }
 .ui-layer:not(.-current) {
   opacity: 0;
@@ -307,15 +306,17 @@ article.ui-layer .ui-content > p {
   transform: translateX(calc(-1em + (-0.25em * var(--char-index))));
 }
 
+
+
 @import url("https://fonts.googleapis.com/css?family=Oswald:200");
 #app {
   display: grid;
-  grid-template-columns: 1fr 1fr 10vmin;
-  height: 90vh;
-  width: 90vw;
-  box-shadow: 0 2vmin 6vmin rgba(0, 0, 0, 0.2);
-  color: white;
-  overflow: hidden;
+    grid-template-columns: 1fr 1fr 10vmin;
+    height: 70vh;
+    width: 85vw;
+    box-shadow: 0 2vmin 6vmin rgb(30 30 30 / 15%);
+    color: white;
+    overflow: hidden;
 }
 
 .ui-layer {
@@ -332,13 +333,13 @@ article.ui-layer .ui-content > p {
 }
 .ui-images img {
   display: block;
-  margin: 0 -15%;
-  width: 130%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  opacity: 0.6;
-  filter: contrast(0.9);
+  margin: 0 0;
+width: 100%;
+height: 100%;
+-o-object-fit: contain;
+object-fit: contain;
+opacity: 1;
+filter: contrast(1);
 }
 
 .ui-right > .ui-layer {
@@ -472,7 +473,7 @@ article.ui-layer .ui-content > p {
   text-transform: uppercase;
   white-space: nowrap;
   font-weight: 200;
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* ---------------------------------- */
@@ -506,7 +507,7 @@ article.ui-layer .ui-content > p {
   font-size: 1.25em;
   height: 1.2em;
   margin: auto;
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
 .ui-nav-back:hover,
@@ -556,13 +557,13 @@ article.ui-layer .ui-content > p {
 }
 .ui-layer img {
   display: block;
-  transform: translateX(-10%);
+  transform: translateX(0%);
 }
 .ui-layer.-current > img {
-  transform: none;
+  transform: scale(0.8, 0.8) translateY(3%) translateX(-6%);
 }
 .ui-layer.-current ~ .ui-layer > img {
-  transform: translateX(10%);
+  transform: translateX(0%);
 }
 .ui-layer:not(.-current) {
   opacity: 0;
@@ -581,9 +582,9 @@ article.ui-layer .ui-content > p {
   transform: translateX(calc(-1em + (-0.25em * var(--char-index))));
 }
 
-/* ---------------------------------- */
+
 body {
-  background-image: linear-gradient(to bottom, #333b44, #2f363f);
+  background-image: linear-gradient(to bottom, #3b3b3b, #d7e1ef);
 }
 
 *,

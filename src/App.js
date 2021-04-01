@@ -9,7 +9,7 @@ class App extends Component {
   render() {
 
     MainScripts()
-    
+
     return (
       <div className="App">
         <header className="App-header">
